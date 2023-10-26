@@ -3,6 +3,8 @@ import { FaSquareXTwitter, FaLinkedin, FaAngellist } from 'react-icons/fa6';
 import { FaMedium, FaGithubSquare } from 'react-icons/fa';
 import '../styles/home.scss';
 import ProjectList from './ProjectList';
+import AboutMe from './AboutMe';
+import Contact from './Contact';
 
 const Home = () => {
   return (
@@ -115,6 +117,8 @@ const Home = () => {
         </div>
       </section>
       <ProjectList />
+      <AboutMe />
+      <Contact />
     </>
   );
 };

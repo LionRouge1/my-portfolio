@@ -15,3 +15,13 @@ export type ProjectProps = {
   technologie: string[]
   projectLink: string[]
 };
+
+export type stack = {
+  name: string
+  image: any
+}
+
+export type skillProps = {
+  key: number;
+  skill: string;
+}

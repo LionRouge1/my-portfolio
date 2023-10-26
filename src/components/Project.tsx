@@ -10,7 +10,7 @@ const Project = ({
 }: ProjectProps) => {
 
   return (
-    <>
+    <article>
       <div className={`snapshoot ${(id % 2) ? 'order':''}`}>
       <img src={featuredImage[0]} alt={name[0]} />
       </div>
@@ -33,7 +33,7 @@ const Project = ({
         </ul>
         <button type="button" className="btn">See Project</button>
       </div>
-    </>
+    </article>
   );
 }
 

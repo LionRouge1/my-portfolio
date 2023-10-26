@@ -55,17 +55,16 @@ const ProjectList = () => {
           featuredImage,
           technologie,
           link
-        } :project) => (
-          <article key={id}>
-            <Project
-              id={id}
-              name={name}
-              description={description}
-              featuredImage={featuredImage}
-              technologie={technologie}
-              projectLink={link}
-            />
-          </article>
+        }: project) => (
+          <Project
+            key={id}
+            id={id}
+            name={name}
+            description={description}
+            featuredImage={featuredImage}
+            technologie={technologie}
+            projectLink={link}
+          />
         ))
       }
     </section>

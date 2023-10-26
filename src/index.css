@@ -6,6 +6,8 @@
   --btn-bg-color: #6070ff;
   --principal-color: #252832;
   --link-color: #5263ff;
+  --footer-color: #6070ff;
+
   --border-color: #dfe1e6;
 }
 
@@ -33,7 +35,7 @@ body {
 
 .btn {
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   background: none;
   border: 1px solid var(--btn-bg-color);
   color: var(--link-color);
@@ -43,6 +45,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   width: max-content;
+  text-decoration: none;
 }
 
 .btn:hover {

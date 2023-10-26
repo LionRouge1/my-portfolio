@@ -159,29 +159,22 @@
     text-decoration: none;
     letter-spacing: 2px;
   }
-
-  .social_media {
-    display: flex;
-    list-style: none;
-
-    a {
-      font-size: 25px;
-    }
-
-    li {
-      margin: 0 10px;
-    }
-
-    li:first-child {
-      margin-left: 0;
-    }
-  }
 }
 
-// .about-me > svg {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 0;
-// }
+.social_media {
+  display: flex;
+  list-style: none;
+
+  a {
+    font-size: 25px;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+}
 
