@@ -1,0 +1,103 @@
+.contact-me {
+  width: 100%;
+  padding: 100px 5%;
+  border-top-left-radius: 100px;
+  background-color: var(--footer-color);
+  text-align: center;
+
+  .text, form {
+    position: relative;
+    z-index: 10;
+  }
+
+  .group {
+    top: 0;
+
+    &1 {
+      right: -20px;
+      top: 5%;
+
+      path {
+        fill: white;
+      }
+    }
+
+    .ell-8 {
+      top: 5%;
+      left: 40%;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &3 {
+      top: unset;
+      bottom: 10%;
+      left: unset;
+      right: 30%;
+
+      .rect-7 {
+
+        svg {
+          width: 54px;
+          height: 51px;
+
+          rect {
+            fill: #6468884b;
+          }
+        }
+      }
+
+      .ell-5 {
+        top: 25px;
+
+        svg {
+          width: 31px;
+          height: 32px;
+          
+          ellipse {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+
+  .text {
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  form {
+    width: 100%;
+    margin-top: 20px;
+    text-align: start;
+
+    input, textarea {
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      color: black;
+      font-size: 18px;
+      outline: none;
+    }
+
+    input {
+      height: 50px;
+    }
+
+    button {
+      background-color: white;
+    }
+  }
+}

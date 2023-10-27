@@ -30,7 +30,7 @@
 
       h2 {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 32px;
       }
 
       ul {
@@ -48,8 +48,13 @@
             font-size: 16px;
           }
 
+          .year,
+          .role {
+            color: #7A869A;
+          }
+
           .dot {
-            background-color: #e5e5e5;
+            background-color: #7A869A;
             border-radius: 50%;
             display: block;
             height: 8px;

@@ -19,11 +19,11 @@ const Project = ({
         <ul className="frame">
           <li><h3>{name[1]}</h3></li>
           <li><span className="dot" /></li>
-          <li><h3>{name[2]}</h3></li>
+          <li><h3 className="role">{name[2]}</h3></li>
           <li><span className="dot" /></li>
-          <li><h3>{name[3]}</h3></li>
+          <li><h3 className="year">{name[3]}</h3></li>
         </ul>
-        <p className="text">{description}</p>
+        <p className="text" dangerouslySetInnerHTML={{ __html: description }} />
         <ul className="lang">
           {
             technologie.map((tech, index) => (

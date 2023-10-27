@@ -118,7 +118,6 @@ const Home = () => {
       </section>
       <ProjectList />
       <AboutMe />
-      <Contact />
     </>
   );
 };

@@ -22,7 +22,7 @@ const ProjectList = () => {
     {
       id: 2,
       name: ['Currency Rate', 'SELF-EMPLOYED', 'Front End Dev', '2022'],
-      description: ' CURRENCY RATE is web site that help:<br>- View foreign exchange rates and use currency exchange rate calculator for more than 150 foreign currencies.<br>- Calculate live currency and foreign exchange rates and  Currency Convertion.<br>- Convert between all major global currencies.',
+      description: ' CURRENCY RATE is web site that help:<br />- View foreign exchange rates and use currency exchange rate calculator for more than 150 foreign currencies.<br>- Calculate live currency and foreign exchange rates and  Currency Convertion.<br>- Convert between all major global currencies.',
       featuredImage: [exchanceM, exchangeD],
       technologie: ['React', 'Redux'],
       link: ['https://currencyrates1.netlify.app/', 'https://github.com/LionRouge1/Currency_Exchange.git']

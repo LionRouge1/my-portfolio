@@ -1,3 +1,5 @@
+import '../styles/contact.scss';
+
 const Contact = () => {
   return (
     <section className="contact-me">
@@ -27,8 +29,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="ell-8">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7.5" cy="7.5" r="7" fill="white" stroke="#CBCDFF" />
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10.0956" r="10" fill="#6070FF" />
           </svg>
         </div>
       </div>
@@ -59,11 +61,7 @@ const Contact = () => {
           placeholder="Write your message here..."
           required
         />
-        <input
-          type="submit"
-          value="Get In Touch"
-          className="btn"
-        />
+        <button type="submit" className="btn">Get In Touch</button>
         <span id="errorMessage" />
       </form>
     </section>
