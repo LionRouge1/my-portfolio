@@ -12,8 +12,8 @@ import redux from '../assets/images/redux.png';
 import bootstrap from '../assets/images/bootstrap.png';
 import ror from '../assets/images/rubyRails.png';
 import laravel from '../assets/images/laravel.png';
-import node from '../assets/images/nodejs.png';
 import Skill from './Skill';
+import { useState } from 'react';
 
 
 const Languages = () => {
@@ -58,10 +58,21 @@ const Languages = () => {
     professional: ['Remote Pair-Programming', 'Teamwork', 'Mentoring', 'Network-Administration', 'System-Administration'] as string[],
   }
 
+  const handleShow = (e:any) => {
+    const element = e.target.localName == 'h3' ? e.target.parentNode : e.target.parentNode.parentNode.parentNode;
+    const show = document.querySelector('.skill-box .show');
+    if(element.classList.contains('show')) {
+      element.classList.remove('show');
+    } else {
+      show?.classList.remove('show');
+      element.classList.add('show');
+    }
+  }
+
   return (
     <ul className="skill-box">
-      <li className="lang">
-        <h3>Language <BiSolidRightArrow /></h3>
+      <li className="lang show">
+        <h3 onClick={(e) => handleShow(e)}>Language <BiSolidRightArrow /></h3>
         <ul>
           {
             languages.map(({ name, image }, index) => (
@@ -71,7 +82,7 @@ const Languages = () => {
         </ul>
       </li>
       <li className="fram">
-        <h3>Frameworks <BiSolidRightArrow /></h3>
+        <h3 onClick={(e) => handleShow(e)}>Frameworks <BiSolidRightArrow /></h3>
         <ul>
           {
             frameworks.map(({ name, image }, index) => (
@@ -81,7 +92,7 @@ const Languages = () => {
         </ul>
       </li>
       <li className="skills">
-        <h3>Skills <BiSolidRightArrow /></h3>
+        <h3 onClick={(e) => handleShow(e)}>Skills <BiSolidRightArrow /></h3>
         <ul className="skls">
           <li className="web-dev">
             {

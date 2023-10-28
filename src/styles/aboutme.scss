@@ -37,6 +37,15 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
   .skill-box {
     list-style: none;
 
+    .show > h3 > svg {
+      transform: rotate(90deg);
+    }
+
+    .show > ul {
+      display: grid;
+      height: auto;
+    }
+
     .toggle {
       display: none;
       grid-row-gap: 10px;
@@ -140,6 +149,9 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
 
     ul {
       list-style: none;
+      display: none;
+      height: 0;
+      transition: all 1s;
 
       li {
         display: flex;
@@ -150,11 +162,19 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
       display: flex;
       justify-content: space-between;
       padding: 10px 0;
+      cursor: pointer;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+
+      svg {
+        transition: all 1s;
+      }
     }
 
     .fram > ul,
     .lang > ul {
-      display: grid;
+      // display: grid;
       padding: 12px;
       gap: 12px;
     }
