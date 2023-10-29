@@ -25,13 +25,13 @@ const Home = () => {
           </div>
           <div className="group2">
             <div className="rect-6">
-              <svg width="9" height="44" viewBox="0 0 9 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="-34" y="37.4868" width="51.9898" height="9.30073" transform="rotate(-46.1415 -34 37.4868)" fill="#EBEBFF" />
+              <svg width="90" height="93" viewBox="0 0 90 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.601562" y="78.9232" width="108.669" height="19.4403" transform="rotate(-46.1415 0.601562 78.9232)" fill="#EBEBFF" />
               </svg>
             </div>
             <div className="ell-11">
-              <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M-11.8095 0.641908C-13.8144 5.33769 -13.8718 10.6376 -11.969 15.3757C-10.0663 20.1137 -6.35924 23.9019 -1.66346 25.9068C3.03231 27.9117 8.3322 27.969 13.0703 26.0663C17.8084 24.1635 21.5965 20.4565 23.6014 15.7607L-11.8095 0.641908Z" fill="#6070FF" />
+              <svg width="78" height="57" viewBox="0 0 78 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.98415 0.0740829C-0.206438 9.88918 -0.326362 20.967 3.65076 30.8705C7.62788 40.774 15.3763 48.692 25.1914 52.8826C35.0065 57.0732 46.0843 57.1931 55.9878 53.216C65.8913 49.2389 73.8093 41.4905 77.9999 31.6754L3.98415 0.0740829Z" fill="#6070FF" />
               </svg>
             </div>
           </div>
@@ -81,8 +81,8 @@ const Home = () => {
               </svg>
             </div>
             <div className="rect-5">
-              <svg width="68" height="39" viewBox="0 0 68 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4.82422" y="-0.00012207" width="68.0631" height="12.1762" transform="rotate(23.34 4.82422 -0.00012207)" fill="#EBEBFF" />
+              <svg width="160" height="91" viewBox="0 0 160 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="11.4399" width="161.407" height="28.875" transform="rotate(23.34 11.4399 0)" fill="#EBEBFF" />
               </svg>
             </div>
           </div>

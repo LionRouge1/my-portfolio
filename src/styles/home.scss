@@ -8,6 +8,10 @@
   overflow: hidden;
   z-index: 0;
   // padding: 100px;
+
+  @media screen and (min-width: 700px) {
+    height: 95vh;
+  }
 }
 
 .group > div > svg > circle {
@@ -40,6 +44,15 @@
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 2px;
+  }
+
+  @media screen and (min-width: 700px) {
+    width: 60%;
+    margin: 10% auto auto auto;
+
+    p {
+      font-size: 20px;
+    }
   }
 }
 

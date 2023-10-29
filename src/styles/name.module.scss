@@ -1,0 +1,8 @@
+.nameCur {
+  animation: blink 1s linear 1s infinite alternate;
+}
+
+@keyframes blink{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

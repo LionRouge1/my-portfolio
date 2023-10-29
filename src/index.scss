@@ -45,7 +45,7 @@ body {
   .group4 .ell-13 path {
     fill: #6468884b;
   }
-  
+
   &1 {
     width: 150px;
     height: 108px;
@@ -53,24 +53,74 @@ body {
     top: 8%;
     right: -55px;
     position: absolute;
-  
+
+    @media screen and (min-width: 700px) {
+      right: 10%;
+
+      .rect-4 {
+        svg {
+          width: 174px;
+          height: 110px;
+        }
+      }
+
+      .ell-3 {
+        svg {
+          width: 210px;
+          height: 148px;
+        }
+      }
+    }
+
     .rect-4 {
       top: -30px;
       position: absolute;
+
+      @media screen and (min-width: 700px) {
+        top: -60px;
+      }
     }
   }
-  
+
   &2 {
-    height: 54px;
-    width: 119px;
     position: absolute;
-  
+    left: -42px;
+
+    @media screen and (min-width: 700px) {
+      left: 0;
+    }
+
+    .rect-6 {
+
+      svg {
+        width: 52px;
+
+        @media screen and (min-width: 700px) {
+          width: 90px;
+        }
+      }
+    }
+
     .ell-11 {
       position: absolute;
-      top: 20px;
+      top: 40px;
+      left: 20px;
+
+      @media screen and (min-width: 700px) {
+        top: 53px;
+        left: 39px;
+      }
+
+      svg {
+        width: 42px;
+
+        @media screen and (min-width: 700px) {
+          width: 78px;
+        }
+      }
     }
   }
-  
+
   &3 {
     width: 50px;
     height: 50px;
@@ -81,9 +131,26 @@ body {
     div {
       position: absolute;
     }
-  
+
     .ell-5 {
       top: 4px;
+    }
+
+    @media screen and (min-width: 700px) {
+      .rect-7 {
+        svg {
+          width: 56px;
+        }
+      }
+
+      .ell-5 {
+        top: 4px;
+        left: 11px;
+
+        svg {
+          width: 23px;
+        }
+      }
     }
   }
 
@@ -106,6 +173,25 @@ body {
       top: 16px;
 
     }
+
+    @media screen and (min-width: 700px) {
+      left: 20%;
+      bottom: 16%;
+
+      .ell-12>svg {
+        width: 36px;
+        height: 18px;
+      }
+
+      .ell-13 {
+        top: 14px;
+
+        svg {
+          width: 46px;
+          height: 46px;
+        }
+      }
+    }
   }
 
   &5 {
@@ -119,8 +205,29 @@ body {
       position: absolute;
     }
 
+    .rect-5>svg {
+      width: 68px;
+    }
+
     .ell-4 {
       left: 51px;
+    }
+
+    @media screen and (min-width: 700px) {
+      bottom: 10%;
+
+      .rect-5>svg {
+        width: 160px;
+      }
+
+      .ell-4 {
+        left: 102px;
+
+        svg {
+          width: 47px;
+          height: 47px;
+        }
+      }
     }
   }
 
@@ -128,6 +235,12 @@ body {
     position: absolute;
     top: 0;
     left: 60%;
+
+    @media screen and (min-width: 700px) {
+      svg {
+        width: 39px;
+      }
+    }
   }
 
   .ell-14 {

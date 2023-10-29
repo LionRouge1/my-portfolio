@@ -5,6 +5,10 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+
+  @media screen and (min-width: 700px) {
+    height: 70px;
+  }
 }
 
 header > .profile-image {
@@ -14,6 +18,10 @@ header > .profile-image {
   border-radius: 50%;
   border: 1px solid var(--btn-bg-color);
   overflow: hidden;
+
+  @media screen and (min-width: 700px) {
+    width: 70px;
+  }
 }
 
 .profile-image > img {
@@ -30,6 +38,10 @@ header > .profile-image {
 header > nav svg {
   font-size: 30px;
   cursor: pointer;
+
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
 }
 
 header > nav {
@@ -74,6 +86,12 @@ header > nav {
 header > nav ul {
   display: none;
   height: 100%;
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 header > nav li {
