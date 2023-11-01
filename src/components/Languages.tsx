@@ -12,44 +12,36 @@ import redux from '../assets/images/redux.png';
 import bootstrap from '../assets/images/bootstrap.png';
 import ror from '../assets/images/rubyRails.png';
 import laravel from '../assets/images/laravel.png';
+import nodejs from '../assets/images/nodejs.png';
+import nextjs from '../assets/images/nextjs.png';
+import wordpress from '../assets/images/wordpress.png';
+import java from '../assets/images/java.png';
+import c from '../assets/images/c++.png';
 import Skill from './Skill';
 // import { useState } from 'react';
 
 
 const Languages = () => {
   const languages: stack[] = [
-    {
-      name: 'JavaScript (Node.js)',
-      image: js,
-    },
-    {
-      name: 'Ruby',
-      image: ruby,
-    },
-    {
-      name: 'HTML',
-      image: html,
-    },
-    {
-      name: 'CSS',
-      image: css,
-    },
-    {
-      name: 'PHP',
-      image: php,
-    },
-    {
-      name: 'Python',
-      image: python,
-    }
+    { name: 'Java', image: java },
+    { name: 'Python', image: python },
+    { name: 'C++', image: c },
+    { name: 'JavaScript (Node.js)', image: js },
+    { name: 'Ruby', image: ruby },
+    { name: 'PHP', image: php },
+    { name: 'HTML', image: html },
+    { name: 'CSS', image: css }
   ];
 
   const frameworks = [
     { name: 'React', image: react },
     { name: 'Redux', image: redux },
+    { name: 'Next js', image: nextjs },
+    { name: 'Node js', image: nodejs },
     { name: 'Bootstrap', image: bootstrap },
     { name: 'Ruby on rails', image: ror },
-    { name: 'Laravel', image: laravel }
+    { name: 'Laravel', image: laravel },
+    { name: 'Wordpress', image: wordpress }
   ];
 
   const skills = {
@@ -58,10 +50,10 @@ const Languages = () => {
     professional: ['Remote Pair-Programming', 'Teamwork', 'Mentoring', 'Network-Administration', 'System-Administration'] as string[],
   }
 
-  const handleShow = (e:any) => {
+  const handleShow = (e: any) => {
     const element = e.target.localName === 'h3' ? e.target.parentNode : e.target.parentNode.parentNode.parentNode;
     const show = document.querySelector('.skill-box .show');
-    if(element.classList.contains('show')) {
+    if (element.classList.contains('show')) {
       element.classList.remove('show');
     } else {
       show?.classList.remove('show');

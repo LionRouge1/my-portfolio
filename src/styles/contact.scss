@@ -22,6 +22,10 @@
       }
     }
 
+    &2 {
+      display: none;
+    }
+
     .ell-8 {
       top: 5%;
       left: 40%;
@@ -98,6 +102,53 @@
 
     button {
       background-color: white;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    padding: 100px 20%;
+
+    .group {
+      &1 {
+        right: 30%;
+        top: 8%;
+      }
+
+      &2 {
+        display: block;
+        left: -21%;
+        right: unset;
+        top: 39%;
+
+        .ell-11 path {
+          fill: white;
+        }
+      }
+
+      &3 {
+        right: unset;
+        left: 30%;
+
+        .ell-5 {
+          left: 3px;
+          top: 30px;
+        }
+      }
+
+      .ell-8 {
+        left: 20%;
+      }
+    }
+
+    @media screen and (min-width: 1050px) {
+      padding: 100px 30%;
+
+      .group {
+        &1 {
+          right: 36%;
+          top: 8%;
+        }
+      }
     }
   }
 }

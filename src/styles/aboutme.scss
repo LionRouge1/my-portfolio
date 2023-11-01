@@ -70,6 +70,7 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
     .skls {
       overflow: hidden;
       position: relative;
+      margin: 0 auto;
 
       &::after {
         content: '';
@@ -204,6 +205,40 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
       padding: 10px;
       background-color: var(--primary-bg-color);
       border-radius: 10px;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+
+    .skill-box {
+      ul {
+        display: block;
+      }
+
+      .fram > ul > li,
+      .lang > ul > li {
+        display: inline-grid;
+        flex-direction: column;
+        min-width: 100px;
+        width: max-content;
+        margin: 5px;
+      }
+
+      .show > .lang-list,
+      .show > .fram-list {
+        height: 351px;
+
+        @media screen and (min-width: 967px) {
+          height: 235px;
+        }
+      }
+  
+      .skls {
+        max-width: 730px;
+      }
     }
   }
 }

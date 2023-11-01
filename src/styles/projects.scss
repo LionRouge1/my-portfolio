@@ -103,20 +103,38 @@
   }
 
   @media screen and (min-width: 700px) {
+    gap: 90px;
+    width: 80%;
+
     article {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 49% 49%;
       // flex-direction: row;
       gap: 20px;
-      height: 400px;
+      height: 496px;
 
-      .snapshoot {
+      div, .snapshoot {
         // width: 544px;
-        height: 100%;
+        height: 452px;
       }
 
       .order {
         order: 2;
+      }
+
+      .detail {
+        display: flex;
+        flex-direction: column;
+
+        .text,
+        .lang,
+        .btn {
+          margin-top: 20px;
+        }
+      }
+
+      .lang > li {
+        height: max-content;
       }
     }
   }
