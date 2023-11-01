@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { ProjectProps } from '../types';
+import DetailPopUp from './DetailPopUp';
 
 const Project = ({
   id,
@@ -8,11 +10,16 @@ const Project = ({
   technologie,
   projectLink
 }: ProjectProps) => {
+  const [state, setState] = useState(false);
+  const handleButton = () => {
+    setState(false)
+  };
+  const screenWidth = window.screen.width;
 
-  return (
+  if (!state) return (
     <article>
-      <div className={`snapshoot ${(id % 2) ? 'order':''}`}>
-      <img src={featuredImage[0]} alt={name[0]} />
+      <div className={`snapshoot ${(id % 2 === 0) ? 'order' : ''}`}>
+        <img src={screenWidth < 700 ? featuredImage[0] : featuredImage[1]} alt={name[0]} />
       </div>
       <div className="detail">
         <h2>{name[0]}</h2>
@@ -31,10 +38,22 @@ const Project = ({
             ))
           }
         </ul>
-        <button type="button" className="btn">See Project</button>
+        <button type="button" className="btn" onClick={() => setState(true)}>See Project</button>
       </div>
     </article>
   );
+
+  else return (
+    <DetailPopUp
+      name={name}
+      projectLink={projectLink}
+      description={description}
+      featuredImage={featuredImage}
+      technologie={technologie}
+      id={id}
+      closeWindow = { handleButton }
+    />
+  )
 }
 
 export default Project;

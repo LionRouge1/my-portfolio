@@ -13,7 +13,7 @@ import bootstrap from '../assets/images/bootstrap.png';
 import ror from '../assets/images/rubyRails.png';
 import laravel from '../assets/images/laravel.png';
 import Skill from './Skill';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 
 const Languages = () => {
@@ -59,7 +59,7 @@ const Languages = () => {
   }
 
   const handleShow = (e:any) => {
-    const element = e.target.localName == 'h3' ? e.target.parentNode : e.target.parentNode.parentNode.parentNode;
+    const element = e.target.localName === 'h3' ? e.target.parentNode : e.target.parentNode.parentNode.parentNode;
     const show = document.querySelector('.skill-box .show');
     if(element.classList.contains('show')) {
       element.classList.remove('show');
@@ -73,7 +73,7 @@ const Languages = () => {
     <ul className="skill-box">
       <li className="lang show">
         <h3 onClick={(e) => handleShow(e)}>Language <BiSolidRightArrow /></h3>
-        <ul>
+        <ul className="lang-list">
           {
             languages.map(({ name, image }, index) => (
               <Stack key={index} name={name} image={image} />
@@ -83,7 +83,7 @@ const Languages = () => {
       </li>
       <li className="fram">
         <h3 onClick={(e) => handleShow(e)}>Frameworks <BiSolidRightArrow /></h3>
-        <ul>
+        <ul className="fram-list">
           {
             frameworks.map(({ name, image }, index) => (
               <Stack key={index} name={name} image={image} />

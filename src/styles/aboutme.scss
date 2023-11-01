@@ -41,16 +41,31 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
       transform: rotate(90deg);
     }
 
-    .show > ul {
-      display: grid;
-      height: auto;
+    .show > .lang-list {
+      height: 485px;
     }
 
-    .toggle {
-      display: none;
-      grid-row-gap: 10px;
-      margin: 10px 0;
+    .show > .fram-list {
+      height: 403px;
     }
+
+    .show > .skls {
+      height: 165px;
+    }
+
+    // .show > ul {
+    //   // display: grid;
+    //   transition: all 1s;
+    //   min-height: 165px;
+    //   max-height: 500px;
+    //   height: auto;
+    // }
+
+    // .toggle {
+    //   display: none;
+    //   grid-row-gap: 10px;
+    //   margin: 10px 0;
+    // }
     
     .skls {
       overflow: hidden;
@@ -149,8 +164,10 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
 
     ul {
       list-style: none;
-      display: none;
+      // display: none;
+      display: grid;
       height: 0;
+      overflow-y: hidden;
       transition: all 1s;
 
       li {
@@ -175,7 +192,7 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
     .fram > ul,
     .lang > ul {
       // display: grid;
-      padding: 12px;
+      // padding: 12px;
       gap: 12px;
     }
 

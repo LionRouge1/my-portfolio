@@ -16,6 +16,16 @@ export type ProjectProps = {
   projectLink: string[]
 };
 
+export type DetailPopUpProps = {
+  id: number
+  name: string[]
+  description: string
+  featuredImage: any[]
+  technologie: string[]
+  projectLink: string[]
+  closeWindow: () => void
+}
+
 export type stack = {
   name: string
   image: any
