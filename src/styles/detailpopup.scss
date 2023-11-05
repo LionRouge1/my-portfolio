@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 
   &-menu {
     width: 90%;
@@ -17,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 20px 10px;
+    padding: 20px;
     position: relative;
     border-radius: 20px;
     overflow-y: scroll;
@@ -75,6 +76,26 @@
 
       a:first-child > svg {
         padding-left: 5px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    &-img {
+      min-height: 460px;
+    }
+
+    &-menu > .detail {
+      // display: flex;
+      grid-template-columns: 70% 30%;
+      row-gap: 30px;
+
+      .actions {
+        width: max-content;
+      }
+
+      .lang li {
+        height: max-content;
       }
     }
   }

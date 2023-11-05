@@ -11,6 +11,22 @@
     padding: 20px;
     background-color: var(--background-color);
     border: 2px solid var(--border-color);
+
+    .snapshoot {
+      transform: translateX(-400px);
+      transition: all 0.8s ease-in-out;
+      opacity: 0;
+    }
+
+    .order {
+      transform: translateX(400px);
+    }
+
+    .detail {
+      transition: all 1s ease-in-out;
+      transform: translateY(400px);
+      opacity: 0;
+    }
   }
 
   .detail {

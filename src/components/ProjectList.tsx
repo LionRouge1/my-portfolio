@@ -8,6 +8,8 @@ import exchangeD from '../assets/images/exchange.png';
 import budgetM from '../assets/images/budgetcategorieMb.png';
 import budgetD from '../assets/images/budgetcategorie.png';
 import schoolM from '../assets/images/schoolManagement.png';
+import { useContext, useEffect } from 'react';
+import { ViewContext } from './context/getviewContext';
 
 const ProjectList = () => {
   const projects: project[] = [
@@ -43,7 +45,36 @@ const ProjectList = () => {
       technologie: ['html', 'css', 'PHP', 'javaScript'],
       link: ['https://github.com/LionRouge1/schoolManagement', '']
     }
-  ]
+  ];
+  // const observerFn = useContext(ViewContext);
+  // const slide = (entries: any) => {
+  //   entries.forEach((entry: any) => {
+  //     if (entry.isIntersecting) {
+  //       const image = entry.target.querySelector('.snapshoot');
+  //       const details = entry.target.querySelector('.detail');
+  //       image.style.opacity = '1';
+  //       image.style.transform = 'translateX(0%)';
+  //       details.style.opacity = '1';
+  //       details.style.transform = 'translateY(0%)';
+  //     } else {
+  //       const image = entry.target.querySelector('.snapshoot');
+  //       const details = entry.target.querySelector('.detail');
+  //       image.style.opacity = '0';
+  //       image.style.transform = 'translateX(-400px)';
+  //       details.style.opacity = '0';
+  //       details.style.transform = 'translateY(400px)';
+  //     }
+  //   })
+  // };
+
+  // const observer = observerFn(slide as () => void);
+  // useEffect(() => {
+  //   const projects = document.querySelectorAll<HTMLElement>('.works > article');
+
+  //   projects.forEach((project) => {
+  //     observer.observe(project);
+  //   });
+  // }, []);
 
   return (
     <section className="works">

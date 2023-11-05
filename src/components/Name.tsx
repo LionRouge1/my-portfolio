@@ -54,7 +54,7 @@ const Name = () => {
   return (
     <h1 className="name">{title.name}
      {state || <span className={Style.nameCur}>|</span>} <br />
-     {title.greeting} {state && <span className={Style.nameCur}>|</span>}
+     {title.greeting}{state && <span className={Style.nameCur}>|</span>}
     </h1>
   );
 };
