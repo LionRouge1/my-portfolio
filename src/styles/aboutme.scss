@@ -1,5 +1,5 @@
-$skill: #252832,#252832ce,#252832b0,#2528328f,#25283241,#2528321e;
-$skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 0.658),rgba(255, 255, 255, 0.356),rgba(255, 255, 255, 0.116);
+$skill: #252832, #252832ce, #252832b0, #2528328f, #25283241, #2528321e;
+$skill-light: rgb(255, 255, 255), rgba(255, 255, 255, 0.836), rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.356), rgba(255, 255, 255, 0.116);
 
 .about {
   background-color: var(--background-color);
@@ -24,10 +24,10 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
       font-size: 40px;
       font-weight: 700;
     }
-  
+
     .skill-box {
       display: grid;
-  
+
       ul {
         list-style: none;
       }
@@ -37,20 +37,24 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
   .skill-box {
     list-style: none;
 
-    .show > h3 > svg {
+    .show>h3>svg {
       transform: rotate(90deg);
     }
 
-    .show > .lang-list {
+    .show>.lang-list {
       height: 485px;
     }
 
-    .show > .fram-list {
+    .show>.fram-list {
       height: 403px;
     }
 
-    .show > .skls {
+    .show>.skls {
       height: 165px;
+    }
+
+    .show>ul {
+      border: none;
     }
 
     // .show > ul {
@@ -66,7 +70,7 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
     //   grid-row-gap: 10px;
     //   margin: 10px 0;
     // }
-    
+
     .skls {
       overflow: hidden;
       position: relative;
@@ -101,20 +105,25 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
         }
       }
     }
-    
-    .skls > li:hover {
+
+    .skls>li:hover {
       animation-play-state: paused;
       -webkit-animation-play-state: paused;
       -o-animation-play-state: paused;
       -moz-animation-play-state: paused;
     }
-    
+
     @keyframes skills {
-      from { transform: translateX(0%); }
-      to { transform: translate(-80%); }
+      from {
+        transform: translateX(0%);
+      }
+
+      to {
+        transform: translate(-80%);
+      }
     }
 
-    .skls > li {
+    .skls>li {
       display: flex;
       width: 600px;
       margin: 0 10px;
@@ -124,7 +133,7 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
       -o-animation: skills 20s ease-in-out -1s infinite alternate-reverse both;
       -moz-animation: skills 20s ease-in-out -1s infinite alternate-reverse both;
     }
-    
+
     .skill {
       background-color: var(--primary-bg-color);
       height: 35px;
@@ -139,12 +148,12 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
       justify-content: center;
       border: 2px solid var(--border-color);
     }
-    
+
     .txt {
       display: inline-block;
       width: max-content;
     }
-    
+
     .symbol {
       width: 35px;
       height: 28px;
@@ -153,8 +162,8 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
       box-shadow: 0 0 8px 0 rgba(96, 112, 255, 0.69);
       margin-left: -10px;
     }
-    
-    .symbol > div {
+
+    .symbol>div {
       width: 15px;
       height: 15px;
       border-radius: 50%;
@@ -170,35 +179,39 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
       height: 0;
       overflow-y: hidden;
       transition: all 1s;
+      border-bottom: 1px solid #ccc;
 
       li {
         display: flex;
       }
     }
 
-    li > h3 {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      cursor: pointer;
-      user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
+    li {
+      padding: 20px 0;
+      h3 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        cursor: pointer;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
 
-      svg {
-        transition: all 1s;
+        svg {
+          transition: all 1s;
+        }
       }
     }
 
-    .fram > ul,
-    .lang > ul {
+    .fram>ul,
+    .lang>ul {
       // display: grid;
       // padding: 12px;
       gap: 12px;
     }
 
-    .fram > ul > li,
-    .lang > ul > li {
+    .fram>ul>li,
+    .lang>ul>li {
       display: flex;
       gap: 12px;
       align-items: center;
@@ -218,8 +231,8 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
         display: block;
       }
 
-      .fram > ul > li,
-      .lang > ul > li {
+      .fram>ul>li,
+      .lang>ul>li {
         display: inline-grid;
         flex-direction: column;
         min-width: 100px;
@@ -227,16 +240,16 @@ $skill-light: rgb(255, 255, 255),rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 
         margin: 5px;
       }
 
-      .show > .lang-list,
-      .show > .fram-list {
+      .show>.lang-list,
+      .show>.fram-list {
         height: 351px;
 
         @media screen and (min-width: 967px) {
           height: 235px;
         }
       }
-  
-      .skls {
+
+      .show .skls {
         max-width: 730px;
       }
     }
