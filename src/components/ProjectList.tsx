@@ -46,35 +46,45 @@ const ProjectList = () => {
       link: ['https://github.com/LionRouge1/schoolManagement', '']
     }
   ];
-  // const observerFn = useContext(ViewContext);
-  // const slide = (entries: any) => {
-  //   entries.forEach((entry: any) => {
-  //     if (entry.isIntersecting) {
-  //       const image = entry.target.querySelector('.snapshoot');
-  //       const details = entry.target.querySelector('.detail');
-  //       image.style.opacity = '1';
-  //       image.style.transform = 'translateX(0%)';
-  //       details.style.opacity = '1';
-  //       details.style.transform = 'translateY(0%)';
-  //     } else {
-  //       const image = entry.target.querySelector('.snapshoot');
-  //       const details = entry.target.querySelector('.detail');
-  //       image.style.opacity = '0';
-  //       image.style.transform = 'translateX(-400px)';
-  //       details.style.opacity = '0';
-  //       details.style.transform = 'translateY(400px)';
-  //     }
-  //   })
-  // };
+  const observerFn = useContext(ViewContext);
+  const slide = (entries: any) => {
+    entries.forEach((entry: any) => {
+      if (entry.isIntersecting) {
+        const image = entry.target.querySelector('.snapshoot');
+        const details = entry.target.querySelector('.detail');
+        image.style.opacity = '1';
+        image.style.transform = 'translateX(0%)';
+        details.style.opacity = '1';
+        details.style.transform = 'translateY(0%)';
+      } else {
+        const image = entry.target.querySelector('.snapshoot');
+        const details = entry.target.querySelector('.detail');
+        const right = entry.target.querySelector('.order');
+        image.style.opacity = '0';
+        if (right) image.style.transform = 'translateX(400px)';
+        else image.style.transform = 'translateX(-400px)';
+        details.style.opacity = '0';
+        details.style.transform = 'translateY(400px)';
+      }
+    })
+  };
 
-  // const observer = observerFn(slide as () => void);
-  // useEffect(() => {
-  //   const projects = document.querySelectorAll<HTMLElement>('.works > article');
+  const observer = observerFn(slide as () => void);
+  useEffect(() => {
+    const projects = document.querySelectorAll<HTMLElement>('.works > article');
 
-  //   projects.forEach((project) => {
-  //     observer.observe(project);
-  //   });
-  // }, []);
+    projects.forEach((project) => {
+      const image = project.querySelector('.snapshoot') as HTMLElement;
+      const right = project.querySelector('.order') as HTMLElement;
+      const details = project.querySelector('.detail') as HTMLElement;
+      image.style.opacity = '0';
+      if (right) image.style.transform = 'translateX(400px)';
+      else image.style.transform = 'translateX(-400px)';
+      details.style.opacity = '0';
+      details.style.transform = 'translateY(400px)';
+      observer.observe(project);
+    });
+  }, []);
 
   return (
     <section className="works">
