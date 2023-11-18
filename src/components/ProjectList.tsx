@@ -87,7 +87,7 @@ const ProjectList = () => {
   }, []);
 
   return (
-    <section className="works">
+    <section className="works" id='projects'>
       {
         projects.map(({
           id,

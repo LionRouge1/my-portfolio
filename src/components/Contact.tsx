@@ -3,7 +3,7 @@ import { Ell8, Group1, Group2, Group3 } from './Design';
 
 const Contact = () => {
   return (
-    <section className="contact-me">
+    <section className="contact-me" id='contact'>
       <div className="group">
         <Group1 />
         <Group2 />
