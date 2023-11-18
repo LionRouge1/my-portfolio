@@ -4,6 +4,7 @@ import Profile from '../assets/profile.jpeg';
 import '../styles/header.scss';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoClose } from 'react-icons/io5';
+import DarkMode from './DarkMode';
 
 const Header = () => {
   const [close, setClose] = useState(false);
@@ -16,6 +17,7 @@ const Header = () => {
       <Link to="/" className="profile-image">
         <img src={Profile} alt="Matchoudi Avlessi" />
       </Link>
+      <DarkMode />
       <nav className={close ? 'active' : ''}>
         {
           close ? <IoClose onClick={handlehamburger} /> : <GiHamburgerMenu onClick={handlehamburger} />

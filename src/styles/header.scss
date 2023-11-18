@@ -4,7 +4,10 @@ header {
   background-color: var(--background-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
+  position: fixed;
+  z-index: 1000;
 
   @media screen and (min-width: 700px) {
     height: 70px;

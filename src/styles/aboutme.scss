@@ -1,6 +1,3 @@
-$skill: #252832, #252832ce, #252832b0, #2528328f, #25283241, #2528321e;
-$skill-light: rgb(255, 255, 255), rgba(255, 255, 255, 0.836), rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.356), rgba(255, 255, 255, 0.116);
-
 .about {
   background-color: var(--background-color);
   width: 100%;
@@ -57,20 +54,6 @@ $skill-light: rgb(255, 255, 255), rgba(255, 255, 255, 0.836), rgba(255, 255, 255
       border: none;
     }
 
-    // .show > ul {
-    //   // display: grid;
-    //   transition: all 1s;
-    //   min-height: 165px;
-    //   max-height: 500px;
-    //   height: auto;
-    // }
-
-    // .toggle {
-    //   display: none;
-    //   grid-row-gap: 10px;
-    //   margin: 10px 0;
-    // }
-
     .skls {
       overflow: hidden;
       position: relative;
@@ -83,11 +66,7 @@ $skill-light: rgb(255, 255, 255), rgba(255, 255, 255, 0.836), rgba(255, 255, 255
         right: 0;
         width: 8%;
         height: 100%;
-        background-image: linear-gradient(-90deg, $skill-light);
-
-        @media screen and (prefers-color-scheme: dark) {
-          background-image: linear-gradient(-90deg, $skill);
-        }
+        background-image: linear-gradient(-90deg, var(--skill-color));
       }
 
       &::before {
@@ -98,11 +77,7 @@ $skill-light: rgb(255, 255, 255), rgba(255, 255, 255, 0.836), rgba(255, 255, 255
         width: 8%;
         height: 100%;
         z-index: 1;
-        background-image: linear-gradient(90deg, $skill-light);
-
-        @media screen and (prefers-color-scheme: dark) {
-          background-image: linear-gradient(90deg, $skill);
-        }
+        background-image: linear-gradient(90deg, var(--skill-color));
       }
     }
 
