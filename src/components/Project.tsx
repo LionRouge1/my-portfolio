@@ -15,36 +15,6 @@ const Project = ({
   const handleButton = () => {
     setState(false)
   };
-
-  // const observerFn = useContext(ViewContext);
-  // const slide = (entries: any) => {
-  //   entries.forEach((entry: any) => {
-  //     if (entry.isIntersecting) {
-  //       const image = entry.target.querySelector('.snapshoot');
-  //       const details = entry.target.querySelector('.detail');
-  //       image.style.opacity = '1';
-  //       image.style.transform = 'translateX(0%)';
-  //       details.style.opacity = '1';
-  //       details.style.transform = 'translateY(0%)';
-  //     } else {
-  //       const image = entry.target.querySelector('.snapshoot');
-  //       const details = entry.target.querySelector('.detail');
-  //       image.style.opacity = '0';
-  //       image.style.transform = 'translateX(-400px)';
-  //       details.style.opacity = '0';
-  //       details.style.transform = 'translateY(400px)';
-  //     }
-  //   })
-  // };
-
-  // const observer = observerFn(slide as () => void);
-  // useEffect(() => {
-  //   const projects = document.querySelectorAll<HTMLElement>('.works > article');
-
-  //   projects.forEach((project) => {
-  //     observer.observe(project);
-  //   });
-  // }, []);
   const screenWidth = window.screen.width;
 
   if (state) return (
