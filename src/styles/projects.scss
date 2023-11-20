@@ -18,19 +18,11 @@
     }
 
     .snapshoot {
-      // transform: translateX(-400px);
       transition: all 0.6s ease-in-out;
-      // opacity: 0;
-    }
-
-    .order {
-      // transform: translateX(400px);
     }
 
     .detail {
       transition: all 1s ease-in-out;
-      // transform: translateY(400px);
-      // opacity: 0;
     }
   }
 
@@ -130,12 +122,10 @@
     article {
       display: grid;
       grid-template-columns: 49% 49%;
-      // flex-direction: row;
       gap: 20px;
       height: 496px;
 
       div, .snapshoot {
-        // width: 544px;
         height: 452px;
       }
 

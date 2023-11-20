@@ -30,9 +30,6 @@
 
 .dark_mode_input {
   display: none;
-  // width: 0;
-  // height: 0;
-  // visibility: hidden;
 }
 
 .dark_mode_input:checked + .dark_mode_label {
@@ -44,10 +41,6 @@
   transform: translateX(-100%);
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
-
-// .dark_mode_label:active:after {
-//   width: 30px;
-// }
 
 .dark_mode_label svg {
   position: absolute;
