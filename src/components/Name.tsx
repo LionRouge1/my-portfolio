@@ -9,7 +9,6 @@ const Name = () => {
     name: '',
     greeting: ''
   });
-  // const text = "I’m Matchoudi, Glad to see you!";
   const typeWriter = async (name:string, greeting:string, counter = 0) => {
     let speed = 200;
     if (state) {

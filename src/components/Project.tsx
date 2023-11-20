@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import { ViewContext } from './context/getviewContext';
 import { ProjectProps } from '../types';
 import DetailPopUp from './DetailPopUp';
 

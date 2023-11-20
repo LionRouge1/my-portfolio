@@ -18,7 +18,6 @@ import wordpress from '../assets/images/wordpress.png';
 import java from '../assets/images/java.png';
 import c from '../assets/images/c++.png';
 import Skill from './Skill';
-// import { useState } from 'react';
 
 
 const Languages = () => {
