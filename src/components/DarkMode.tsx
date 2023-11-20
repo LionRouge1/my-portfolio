@@ -4,24 +4,28 @@ import '../styles/darkmode.scss';
 import { useEffect } from 'react';
 
 const toggleDarkMode = () => {
-  if (document.documentElement.classList.contains("light")) {
-    document.documentElement.classList.remove("light")
-    document.documentElement.classList.add("dark")
-  } else if (document.documentElement.classList.contains("dark")) {
-    document.documentElement.classList.remove("dark")
-    document.documentElement.classList.add("light")
+  if (document.documentElement.classList.contains('light')) {
+    document.documentElement.classList.replace('light', 'dark');
+    localStorage.setItem('darkMode', 'true');
+  } else if (document.documentElement.classList.contains('dark')) {
+    document.documentElement.classList.replace('dark', 'light');
+    localStorage.setItem('darkMode', 'false');
   };
+};
+
+const addDarkMode = () => {
+  document.documentElement.classList.add('dark');
+  const darkModeInput = document.getElementById('dark_mode_input') as HTMLInputElement;
+  darkModeInput.checked = true;
 }
 
 const DarkMode = () => {
   useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add("dark");
-      const dark_mode_input = document.getElementById('dark_mode_input') as HTMLInputElement;
-      dark_mode_input.checked = true
-    } else {
-      document.documentElement.classList.add("light")
-    }
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode) {
+      (darkMode === 'true') ? addDarkMode() : document.documentElement.classList.add('light');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) addDarkMode();
+    else document.documentElement.classList.add('light');
   }, []);
 
   return (
