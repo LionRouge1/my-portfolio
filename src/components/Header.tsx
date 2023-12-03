@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Profile from '../assets/profile.jpeg';
 import '../styles/header.scss';
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -24,7 +24,7 @@ const Header = () => {
         }
         <ul>
           <li onClick={()=> { setClose(false)}}><a href="#projects">Projects</a></li>
-          <li onClick={()=> { setClose(false)}}><a href="#">Articles</a></li>
+          <li onClick={()=> { setClose(false)}}><NavLink to='articles'>Articles</NavLink></li>
           <li onClick={()=> { setClose(false)}}><a href="#about">About</a></li>
           <li onClick={()=> { setClose(false)}}><a href="#contact">Contact</a></li>
         </ul>
