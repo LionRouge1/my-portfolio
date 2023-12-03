@@ -1,8 +1,15 @@
 .nameCur {
+  opacity: 0.8;
   animation: blink 1s linear 1s infinite alternate;
 }
 
 @keyframes blink{
   from {opacity: 0;}
-  to {opacity: 1;}
+  to {opacity: 0.8;}
+}
+
+.comma {
+  display: none;
+  font-weight: normal;
+  font-size: 18px;
 }

@@ -37,6 +37,5 @@ export type skillProps = {
 }
 
 export type DeleteWriterProps = {
-  title: string
-  next: string
+  titles: string[]
 }

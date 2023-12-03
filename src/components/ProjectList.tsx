@@ -47,7 +47,7 @@ const ProjectList = () => {
     }
   ];
   const observerFn = useContext(ViewContext);
-  const slide = (entries: any) => {
+  const observer = observerFn((entries) => {
     entries.forEach((entry: any) => {
       if (entry.isIntersecting) {
         const image = entry.target.querySelector('.snapshoot');
@@ -67,9 +67,8 @@ const ProjectList = () => {
         details.style.transform = 'translateY(400px)';
       }
     })
-  };
+  });
 
-  const observer = observerFn(slide as () => void);
   useEffect(() => {
     const projects = document.querySelectorAll<HTMLElement>('.works > article');
 

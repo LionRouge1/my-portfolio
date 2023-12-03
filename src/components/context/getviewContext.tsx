@@ -10,7 +10,7 @@ const config = {
   threshold:  0
 }
 
-const observer = (callback :() => void) => new IntersectionObserver(callback, config);
+const observer = (callback :(entries:any) => void) => new IntersectionObserver(callback, config);
 
 export const ViewContext = createContext(observer);
 
