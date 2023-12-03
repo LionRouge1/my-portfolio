@@ -35,3 +35,8 @@ export type skillProps = {
   key: number;
   skill: string;
 }
+
+export type DeleteWriterProps = {
+  title: string
+  next: string
+}
