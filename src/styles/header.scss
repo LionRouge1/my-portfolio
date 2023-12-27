@@ -53,7 +53,7 @@ header > nav {
   align-items: center;
 }
 
-.active > svg {
+.nav-active > svg {
   position: absolute;
   top: 5%;
   left: 20px;
@@ -61,7 +61,7 @@ header > nav {
   font-weight: bold;
 }
 
-.active {
+.nav-active {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -72,14 +72,14 @@ header > nav {
   backdrop-filter: blur(7px);
 }
 
-.active > ul {
+.nav-active > ul {
   display: grid;
   align-items: center;
   justify-content: center;
   height: 400px;
 }
 
-.active a {
+.nav-active a {
   font-size: 32px;
   font-weight: 600;
   text-align: start;

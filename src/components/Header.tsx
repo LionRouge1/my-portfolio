@@ -18,15 +18,15 @@ const Header = () => {
         <img src={Profile} alt="Matchoudi Avlessi" />
       </Link>
       <DarkMode />
-      <nav className={close ? 'active' : ''}>
+      <nav className={close ? 'nav-active' : ''}>
         {
           close ? <IoClose onClick={handlehamburger} /> : <GiHamburgerMenu onClick={handlehamburger} />
         }
         <ul>
-          <li onClick={()=> { setClose(false)}}><a href="#projects">Projects</a></li>
+          <li onClick={()=> { setClose(false)}}><a href='/#projects'>Projects</a></li>
+          <li onClick={()=> { setClose(false)}}><a href='/#about'>About</a></li>
+          <li onClick={()=> { setClose(false)}}><a href='/#contact'>Contact</a></li>
           <li onClick={()=> { setClose(false)}}><NavLink to='articles'>Articles</NavLink></li>
-          <li onClick={()=> { setClose(false)}}><a href="#about">About</a></li>
-          <li onClick={()=> { setClose(false)}}><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>

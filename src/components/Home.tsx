@@ -1,4 +1,5 @@
 import Name from './Name';
+import Contact from './Contact';
 import { FaSquareXTwitter, FaLinkedin, FaAngellist } from 'react-icons/fa6';
 import { FaMedium, FaGithubSquare } from 'react-icons/fa';
 import '../styles/home.scss';
@@ -30,7 +31,7 @@ const Home = () => (
           what you see and have a project you need coded, don’t hesitate to
           contact me.
         </p>
-        <a href="">LET’S CONNECT</a>
+        <a href="/contact">LET’S CONNECT</a>
         <ul className="social_media">
           <li>
             <a href="https://twitter.com/Matchoudi1" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a>
@@ -52,6 +53,9 @@ const Home = () => (
     </section>
     <ProjectList />
     <AboutMe />
+    <section className="footer">
+      <Contact />
+    </section>
   </>
 );
 
