@@ -2,7 +2,10 @@ const mongoose = require('mongoose');
 const { Schema, model} = mongoose;
 
 const technologySchema = new Schema({
-  name: String,
+  name: {
+    type: String,
+    require: true
+  },
   description: String
 });
 

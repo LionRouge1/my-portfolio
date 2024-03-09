@@ -4,8 +4,8 @@ const app = express();
 // const router = express.Router();
 // import projectRoute from './routes/Project';
 // import userRoute from './routes/User';
-const projectRoute = require('./routes/Project');
-const userRoute = require('./routes/User');
+const projectRoute = require('./Routes/Project');
+const userRoute = require('./Routes/User');
 
 app.use(projectRoute);
 app.use(userRoute);
