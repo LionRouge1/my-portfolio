@@ -1,9 +1,9 @@
-import { useContext, useEffect, useState } from 'react';
-import { ViewContext } from './context/getviewContext';
+import { useEffect, useState } from 'react';
+// import { ViewContext } from './context/getviewContext';
 import Style from '../styles/name.module.scss';
 
 const Name = () => {
-  const getview = useContext(ViewContext);
+  // const getview = useContext(ViewContext);
   const [state, setState] = useState(false);
   const [title, setTitle] = useState({
     name: '',
