@@ -10,8 +10,8 @@ function App() {
   return (
     <ViewContextProvider>
       <Routes>
-        <Route path="/my-portfolio" element={<Layout />}>
-          <Route index element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route path='/my-portfolio' element={<Home />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/thanks' element={<Thanks />} />
           <Route path='*' element={<NotFound />} />
