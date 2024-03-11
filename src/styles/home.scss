@@ -67,6 +67,10 @@
 
   li {
     margin: 0 10px;
+
+    svg:hover {
+      fill: var(--btn-bg-color);
+    }
   }
 
   li:first-child {
