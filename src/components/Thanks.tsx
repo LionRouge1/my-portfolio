@@ -1,12 +1,11 @@
 import '../styles/thanks.scss'
 import NotFound from './NotFound';
 import SocialMedia from './SocialMedia';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Thanks = () => {
   const location = useLocation();
-  const navigate = useNavigate();
-  console.log(location.state);
+
   if(location.state) {
     return (
       <section className="thanks">
