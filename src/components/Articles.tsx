@@ -1,5 +1,5 @@
 const Articles = () => (
-  <div>Comming soon</div>
+  <section className="articles">Comming soon...</section>
 );
 
 export default Articles;
