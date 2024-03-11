@@ -1,12 +1,11 @@
 import Name from './Name';
 import Contact from './Contact';
-import { FaSquareXTwitter, FaLinkedin, FaAngellist } from 'react-icons/fa6';
-import { FaMedium, FaGithubSquare } from 'react-icons/fa';
 import '../styles/home.scss';
 import ProjectList from './ProjectList';
 import AboutMe from './AboutMe';
 import { Ell15, Ell8, Ell14, Group1, Group2, Group3, Group4, Group5 } from './Design';
 import DeleteWriter from './deleteWriter';
+import SocialMedia from './SocialMedia';
 
 const jobTilles = ['Software Engineer', 'Full-stack Developer', 'Software Developer', 'Front-end Developer', 'Back-end Developer'];
 const Home = () => (
@@ -32,23 +31,7 @@ const Home = () => (
           contact me.
         </p>
         <a href="/contact">LET’S CONNECT</a>
-        <ul className="social_media">
-          <li>
-            <a href="https://twitter.com/Matchoudi1" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/matchoudi" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@matchoudiavlessi" target="_blank" rel="noopener noreferrer"><FaMedium /></a>
-          </li>
-          <li>
-            <a href="https://github.com/LionRouge1" target="_blank" rel="noopener noreferrer"><FaGithubSquare /></a>
-          </li>
-          <li>
-            <a href="https://angel.co/u/matchoudi" target="_blank" rel="noopener noreferrer"><FaAngellist /></a>
-          </li>
-        </ul>
+        <SocialMedia />
       </div>
     </section>
     <ProjectList />
