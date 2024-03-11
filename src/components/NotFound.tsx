@@ -15,9 +15,9 @@ const NotFound = () => (
     <div className="message-box">
       <h1>4🥴4</h1>
       <p><span className="fun">Oops! </span>You've stumbled upon the mustical land of <span className="fun">4O4</span><br></br>
-        Fear not, for every detour present an apportunity for discovery. Let's guide you <Link to='/'>Back to Home</Link> to the familiar territory
+        Fear not, for every detour present an apportunity for discovery. Let's guide you <Link to='/my-portfolio'>Back to Home</Link> to the familiar territory
       </p>
-      <Link to='/' className="btn">Back to Home</Link>
+      <Link to='/my-portfolio' className="btn">Back to Home</Link>
     </div>
   </div>
 );

@@ -14,7 +14,7 @@ const Header = () => {
   }
   return (
     <header>
-      <Link to="/" className="profile-image">
+      <Link to="/my-portfolio" className="profile-image">
         <img src={Profile} alt="Matchoudi Avlessi" />
       </Link>
       <DarkMode />
@@ -23,9 +23,9 @@ const Header = () => {
           close ? <IoClose onClick={handlehamburger} /> : <GiHamburgerMenu onClick={handlehamburger} />
         }
         <ul>
-          <li onClick={()=> { setClose(false)}}><a href='/#projects'>Projects</a></li>
-          <li onClick={()=> { setClose(false)}}><a href='/#about'>About</a></li>
-          <li onClick={()=> { setClose(false)}}><a href='/#contact'>Contact</a></li>
+          <li onClick={()=> { setClose(false)}}><a href='/my-portfolio/#projects'>Projects</a></li>
+          <li onClick={()=> { setClose(false)}}><a href='/my-portfolio/#about'>About</a></li>
+          <li onClick={()=> { setClose(false)}}><a href='/my-portfolio/#contact'>Contact</a></li>
           <li onClick={()=> { setClose(false)}}><NavLink to='articles'>Articles</NavLink></li>
         </ul>
       </nav>

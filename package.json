@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lionrouge1.github.io",
+  "homepage": "https://lionrouge1.github.io/my-portfolio",
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@testing-library/jest-dom": "^5.17.0",
