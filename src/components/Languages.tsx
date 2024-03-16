@@ -22,12 +22,12 @@ import Skill from './Skill';
 
 const Languages = () => {
   const languages: stack[] = [
-    { name: 'Java', image: java },
     { name: 'Python', image: python },
-    { name: 'C++', image: c },
-    { name: 'JavaScript (Node.js)', image: js },
     { name: 'Ruby', image: ruby },
     { name: 'PHP', image: php },
+    { name: 'C++', image: c },
+    { name: 'JavaScript (Node.js)', image: js },
+    { name: 'Java', image: java },
     { name: 'HTML', image: html },
     { name: 'CSS', image: css }
   ];
@@ -47,7 +47,7 @@ const Languages = () => {
     webDev: ['JavaScript', 'React', 'Redux', 'HTML5', 'CSS3', 'Python', 'Ruby', 'Rails', 'MySQL'] as string[],
     tools: ['Git', 'GitHub', 'Figma', 'Mobile/Responsive Development', 'RSpec', 'TDD', 'Chrome Dev Tools'] as string[],
     professional: ['Remote Pair-Programming', 'Teamwork', 'Mentoring', 'Network-Administration', 'System-Administration'] as string[],
-  }
+  };
 
   const handleShow = (e: any) => {
     const element = e.target.localName === 'h3' ? e.target.parentNode : e.target.parentNode.parentNode.parentNode;
@@ -58,7 +58,7 @@ const Languages = () => {
       show?.classList.remove('show');
       element.classList.add('show');
     }
-  }
+  };
 
   return (
     <ul className="skill-box">
