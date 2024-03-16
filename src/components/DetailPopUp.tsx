@@ -2,6 +2,7 @@ import { IoClose } from "react-icons/io5";
 import { PiGithubLogoFill } from 'react-icons/pi';
 import { DetailPopUpProps } from "../types";
 import '../styles/detailpopup.scss';
+import Slider from "./Slider";
 
 const DetailPopUp = ({
   name,
@@ -26,9 +27,7 @@ const DetailPopUp = ({
         </div>
         <IoClose onClick={closeWindow} />
       </div>
-      <div className="popup-img">
-        <img src={window.screen.width > 700 ? featuredImage[1] : featuredImage[0]} alt={name[0]} />
-      </div>
+      <Slider images={featuredImage} name={name[0]} />
       <div className="detail">
         <p dangerouslySetInnerHTML={{ __html: description }} />
         <div className="actions">

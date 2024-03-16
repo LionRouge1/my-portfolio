@@ -24,18 +24,23 @@ export type DetailPopUpProps = {
   technologie: string[]
   projectLink: string[]
   closeWindow: () => void
-}
+};
 
 export type stack = {
   name: string
   image: any
-}
+};
 
 export type skillProps = {
   key: number;
   skill: string;
-}
+};
 
 export type DeleteWriterProps = {
   titles: string[]
-}
+};
+
+export type SliderProps = {
+  images: string[]
+  name: string
+};
