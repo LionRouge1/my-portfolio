@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SliderProps } from "../types";
+import "../styles/slider.scss";
 
 const Slider = ({ images, name }: SliderProps) => {
   const [index, setIndex] = useState(0);
@@ -14,8 +15,8 @@ const Slider = ({ images, name }: SliderProps) => {
   return (
     <div className="popup-img">
       <img src={images[index]} alt={name} />
-      <button onClick={previous} type="button">&#10094;</button >
-      <button onClick={next} type="button">&#10095;</button >
+      <button onClick={previous} type="button" className="btn next">&#10094;</button >
+      <button onClick={next} type="button" className="btn prev">&#10095;</button >
     </div>
   );
 };
