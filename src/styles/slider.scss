@@ -1,5 +1,10 @@
 .popup-img {
   position: relative;
+  overflow: hidden;
+
+  img {
+    object-fit: contain;
+  }
   
   button {
     background-color: var(--primary-bg-color);
