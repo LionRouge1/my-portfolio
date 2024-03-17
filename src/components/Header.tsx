@@ -18,10 +18,10 @@ const Header = () => {
     document.onscroll = () => {
       if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         header.style.position = 'fixed';
-        header.style.height = '58px';
+        if (window.screen.width > 800) header.style.height = '58px';
       } else {
         header.style.position = 'relative';
-        header.style.height = '70px';
+        if (window.screen.width > 800) header.style.height = '70px';
       }
     };
   });
