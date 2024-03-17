@@ -1,10 +1,14 @@
 import { project } from '../types';
 import Project from './Project';
 import '../styles/projects.scss';
-import docterM from '../assets/images/doctorAppointmentfrondend.png';
-import docterD from '../assets/images/appointmentfrondend.png';
-import exchanceM from '../assets/images/exchangeMb.png';
+import reme1 from '../assets/images/re-me1.png';
+import reme2 from '../assets/images/re-me2.jpg';
+import reme3 from '../assets/images/re-me3.jpg';
+import exchangeM from '../assets/images/exchangeMb.png';
 import exchangeD from '../assets/images/exchange.png';
+import exchangeD1 from '../assets/images/exchangeD1.png';
+import exchangeM1 from '../assets/images/exchangeM1.png';
+import exchangeM2 from '../assets/images/exchangeM2.png';
 import budgetM from '../assets/images/budgetcategorieMb.png';
 import budgetD from '../assets/images/budgetcategorie.png';
 import schoolM from '../assets/images/schoolManagement.png';
@@ -15,17 +19,17 @@ const ProjectList = () => {
   const projects: project[] = [
     {
       id: 1,
-      name: ['Doctor Appointment', 'CANOPY', 'Full Stack Dev', '2022'],
-      description: 'Book Appoinments is an application for doctor book appoinemnts. This applications is responsive and users can load, create, and delete doctors and reservations. Users need to sign up or sign in to access application. They can sign up or sign in using the sign up and login forms.',
-      featuredImage: [docterM, docterD],
-      technologie: ['React', 'Redux', 'Ruby on Rails'],
-      link: ['https://doctor-appointment-frontend.netlify.app/', 'https://github.com/MaganaAsiati/doctor_appointment_backend']
+      name: ['Re Me', 'CodLab', 'Full Stack Dev', '2023'],
+      description: 'RE-ME is a Google extension that helps easily bookmark valuable content that you come across, saving it to your personal library for later. Re-Me then sends you periodic reminders, ensuring you make the most of your downtime by revisiting and absorbing the wealth of knowledge you curated for yourself!',
+      featuredImage: [reme1, reme2, reme3],
+      technologie: ['Next', 'JavaScript', 'Ruby on Rails'],
+      link: ['https://chromewebstore.google.com/detail/re-me/aneophmeaepdcjleicjgehfogheojdge?pli=1', 'https://github.com/Colab19-Team7']
     },
     {
       id: 2,
       name: ['Currency Rate', 'SELF-EMPLOYED', 'Front End Dev', '2022'],
-      description: ' CURRENCY RATE is web site that help:<br />- View foreign exchange rates and use currency exchange rate calculator for more than 150 foreign currencies.<br>- Calculate live currency and foreign exchange rates and  Currency Convertion.<br>- Convert between all major global currencies.',
-      featuredImage: [exchanceM, exchangeD],
+      description: 'CURRENCY RATE is web site that help:<br />- View foreign exchange rates and use currency exchange rate calculator for more than 150 foreign currencies.<br>- Calculate live currency and foreign exchange rates and  Currency Convertion.<br>- Convert between all major global currencies.',
+      featuredImage: [exchangeD, exchangeD1, exchangeM, exchangeM1, exchangeM2],
       technologie: ['React', 'Redux'],
       link: ['https://currencyrates1.netlify.app/', 'https://github.com/LionRouge1/Currency_Exchange.git']
     },
