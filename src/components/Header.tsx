@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Profile from '../assets/profile.jpeg';
 import '../styles/header.scss';
@@ -12,6 +12,20 @@ const Header = () => {
   const handlehamburger = () => {
     setClose((prev) => (prev ? false : true))
   }
+
+  useEffect(() => {
+    const header = document.querySelector('header') as HTMLElement;
+    document.onscroll = () => {
+      if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        header.style.position = 'fixed';
+        header.style.height = '58px';
+      } else {
+        header.style.position = 'relative';
+        header.style.height = '70px';
+      }
+    };
+  });
+
   return (
     <header>
       <Link to="/my-portfolio" className="profile-image">

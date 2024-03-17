@@ -2,7 +2,7 @@
   background-color: var(--background-color);
   width: 100%;
   padding-top: 30px;
-  margin-top: 50px;
+  // margin-top: 50px;
   height: calc(84vh - 50px);
   border-bottom-left-radius: 100px;
   position: relative;
@@ -10,8 +10,8 @@
   z-index: 0;
 
   @media screen and (min-width: 700px) {
-    height: calc(95vh - 70px);
-    margin-top: 70px;
+    height: calc(100vh - 70px);
+    // margin-top: 70px;
   }
 }
 
