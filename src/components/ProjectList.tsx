@@ -20,9 +20,9 @@ const ProjectList = () => {
     {
       id: 1,
       name: ['Re Me', 'CodLab', 'Full Stack Dev', '2023'],
-      description: 'RE-ME is a Google extension that helps easily bookmark valuable content that you come across, saving it to your personal library for later. Re-Me then sends you periodic reminders, ensuring you make the most of your downtime by revisiting and absorbing the wealth of knowledge you curated for yourself!',
+      description: 'RE-ME is a Chrome extension that helps easily bookmark valuable content that you come across, saving it to your personal library for later. Re-Me then sends you periodic reminders, ensuring you make the most of your downtime by revisiting and absorbing the wealth of knowledge you created for yourself!',
       featuredImage: [reme1, reme2, reme3],
-      technologie: ['Next', 'JavaScript', 'Ruby on Rails'],
+      technologie: ['Next', 'Typescrip', 'JavaScript', 'Ruby on Rails'],
       link: ['https://chromewebstore.google.com/detail/re-me/aneophmeaepdcjleicjgehfogheojdge?pli=1', 'https://github.com/Colab19-Team7']
     },
     {
