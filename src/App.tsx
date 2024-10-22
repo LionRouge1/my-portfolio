@@ -11,9 +11,9 @@ function App() {
     <ViewContextProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path='/my-portfolio' element={<Home />} />
-          <Route path='/articles' element={<Articles />} />
-          <Route path='/thanks' element={<Thanks />} />
+          <Route index element={<Home />} />
+          <Route path='articles' element={<Articles />} />
+          <Route path='thanks' element={<Thanks />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
