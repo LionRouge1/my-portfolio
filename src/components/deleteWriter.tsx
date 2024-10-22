@@ -34,13 +34,16 @@ const DeleteWriter = ({ titles }: DeleteWriterProps) => {
     jobTitleCursor.style.display = 'none';
     const comma =jobTitleCursor.nextSibling as HTMLElement;
     comma.style.display = 'inline'
-    setTimeout(() => {
+
+    const setTime = setTimeout(() => {
       const jobTitleCursor = document.getElementById('job-title-cursor') as HTMLElement;
       jobTitleCursor.style.display = 'inline';
       const comma =jobTitleCursor.nextSibling as HTMLElement;
       comma.style.display = 'none'
       deleteJob();
     }, 7500);
+
+    return () => clearTimeout(setTime)
   }, [position])
 
   return (
