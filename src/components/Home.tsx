@@ -10,7 +10,7 @@ import SocialMedia from './SocialMedia';
 const jobTilles = ['Software Engineer', 'Full-stack Developer', 'Software Developer', 'Front-end Developer', 'Back-end Developer'];
 const Home = () => (
   <>
-    <section className="about-me">
+    <section className="about-me" id='home'>
       <div className="group">
         <Group1 />
         <Group2 />
