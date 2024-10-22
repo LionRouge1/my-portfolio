@@ -13,6 +13,38 @@ const Header = () => {
     setClose((prev) => (prev ? false : true))
   }
 
+  const handleAnchor = (anchor:string) => {
+    setClose(false);
+    let element = document.getElementById(anchor)
+
+    const scrollToAnchor = () => {
+      element = document.getElementById(anchor)
+      element?.scrollIntoView()
+    }
+
+    if (element) {
+      scrollToAnchor();
+    } else {
+      const observer = new MutationObserver(() => {
+        element = document.getElementById(anchor);
+        if (element) {
+          scrollToAnchor();
+          observer.disconnect();
+        }
+      });
+  
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+  
+      window.addEventListener("load", () => {
+        scrollToAnchor();
+        window.removeEventListener("load", scrollToAnchor);
+      });
+    }
+  }
+
   useEffect(() => {
     const header = document.querySelector('header') as HTMLElement;
     document.onscroll = () => {
