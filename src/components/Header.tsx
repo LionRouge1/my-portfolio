@@ -69,9 +69,10 @@ const Header = () => {
           close ? <IoClose onClick={handlehamburger} /> : <GiHamburgerMenu onClick={handlehamburger} />
         }
         <ul>
-          <li onClick={()=> { setClose(false)}}><a href='/#projects'>Projects</a></li>
-          <li onClick={()=> { setClose(false)}}><a href='/#about'>About</a></li>
-          <li onClick={()=> { setClose(false)}}><a href='/#contact'>Contact</a></li>
+          <li><NavLink to="/" onClick={() =>handleAnchor('home')}>Home</NavLink></li>
+          <li><NavLink to="/" onClick={() =>handleAnchor('projects')}>Projects</NavLink></li>
+          <li><NavLink to="/" onClick={() =>handleAnchor('about')}>About</NavLink></li>
+          <li><NavLink to="/" onClick={() =>handleAnchor('contact')}>Contact</NavLink></li>
           <li onClick={()=> { setClose(false)}}><NavLink to='articles'>Articles</NavLink></li>
         </ul>
       </nav>
