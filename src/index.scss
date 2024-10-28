@@ -9,6 +9,7 @@
   --footer-color: #6070ff;
   --border-color: #dfe1e6;
   --skill-color: rgb(255, 255, 255), rgba(255, 255, 255, 0.836), rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.356), rgba(255, 255, 255, 0.116);
+  --skill-box-hover: #00000008;
 }
 
 :root.dark {
@@ -19,6 +20,7 @@
   --border-color: #3e44579a;
   --footer-color: #11174d;
   --skill-color: #252832, #252832ce, #252832b0, #2528328f, #25283241, #2528321e;
+  --skill-box-hover: #ffffff0d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +32,7 @@
     --border-color: #3e44579a;
     --footer-color: #11174d;
     --skill-color: #252832, #252832ce, #252832b0, #2528328f, #25283241, #2528321e;
+    --skill-box-hover: #ffffff0d;
   }
 }
 
