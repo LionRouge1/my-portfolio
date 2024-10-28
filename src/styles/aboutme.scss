@@ -172,6 +172,9 @@
         -moz-user-select: none;
         -webkit-user-select: none;
 
+        &:hover {
+          background-color: var(--skill-box-hover);
+        }
         svg {
           transition: all 1s;
         }
