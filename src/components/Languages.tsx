@@ -51,7 +51,6 @@ const Languages = () => {
 
   const handleShow = (e: any) => {
     const element = e.target.localName === 'h3' ? e.target.parentNode : e.target.parentNode.parentNode.parentNode;
-    console.log(element)
     const show = document.querySelector('.skill-box .show');
     if (element.classList.contains('show')) {
       element.classList.remove('show');
