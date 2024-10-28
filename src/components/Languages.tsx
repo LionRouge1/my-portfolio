@@ -51,6 +51,7 @@ const Languages = () => {
 
   const handleShow = (e: any) => {
     const element = e.target.localName === 'h3' ? e.target.parentNode : e.target.parentNode.parentNode.parentNode;
+    console.log(element)
     const show = document.querySelector('.skill-box .show');
     if (element.classList.contains('show')) {
       element.classList.remove('show');
@@ -62,7 +63,7 @@ const Languages = () => {
 
   return (
     <ul className="skill-box">
-      <li className="lang show">
+      <li className="lang">
         <h3 onClick={(e) => handleShow(e)}>Language <BiSolidRightArrow /></h3>
         <ul className="lang-list">
           {
@@ -82,7 +83,7 @@ const Languages = () => {
           }
         </ul>
       </li>
-      <li className="skills">
+      <li className="skills show">
         <h3 onClick={(e) => handleShow(e)}>Skills <BiSolidRightArrow /></h3>
         <ul className="skls">
           <li className="web-dev">
