@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Profile from '../assets/profile.jpeg';
+import Profile from '../assets/profile.png';
 import '../styles/header.scss';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoClose } from 'react-icons/io5';
