@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.64b34d19.css",
-    "main.js": "/static/js/main.d164a140.js",
+    "main.css": "/static/css/main.7c15d39d.css",
+    "main.js": "/static/js/main.1ddac09a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile.png": "/static/media/profile.a1f6c22730f2547e46dc.png",
-    "static/media/exchange.png": "/static/media/exchange.6afd74229b82da26488a.png",
-    "static/media/exchangeD1.png": "/static/media/exchangeD1.833270d1f74bd610d3dd.png",
-    "static/media/exchangeM1.png": "/static/media/exchangeM1.e20cb8b3dc02658dbc04.png",
-    "static/media/exchangeMb.png": "/static/media/exchangeMb.02b33f59d32a97ac2b14.png",
-    "static/media/exchangeM2.png": "/static/media/exchangeM2.1accb749c2d5098308c1.png",
+    "static/media/sibeD.png": "/static/media/sibeD.88f0bdc77e62ad8f9779.png",
+    "static/media/nexoraD.png": "/static/media/nexoraD.69edc8978bdb7a5610f4.png",
+    "static/media/vshotD.png": "/static/media/vshotD.2e2b46d190a642b49a7f.png",
+    "static/media/vshotDashboardD.png": "/static/media/vshotDashboardD.cd7a05708acd8ce4eda4.png",
+    "static/media/nexoraPaymentD.png": "/static/media/nexoraPaymentD.06bdb0b369e5e109b1be.png",
+    "static/media/sibeM.png": "/static/media/sibeM.15c81c0b4fd622ec5879.png",
+    "static/media/vshotM.png": "/static/media/vshotM.410f49bd71a83242209e.png",
+    "static/media/vshotDashboardM.png": "/static/media/vshotDashboardM.2d4daf519f1d05e81bb0.png",
+    "static/media/nexoraM.png": "/static/media/nexoraM.716cc76c14a7f9b8cecd.png",
     "static/media/re-me1.png": "/static/media/re-me1.103624c4424db81b0ffc.png",
-    "static/media/budgetcategorie.png": "/static/media/budgetcategorie.5cd53a4e244405faa6ac.png",
-    "static/media/schoolManagement.png": "/static/media/schoolManagement.66db996fd9c196bd0cc8.png",
     "static/media/re-me3.jpg": "/static/media/re-me3.ec055ca48f3076ed273b.jpg",
     "static/media/re-me2.jpg": "/static/media/re-me2.5d134e1e883c3f8f65ee.jpg",
-    "static/media/budgetcategorieMb.png": "/static/media/budgetcategorieMb.0e528148c9bdad9650cb.png",
+    "static/media/nexoraPaymentM.png": "/static/media/nexoraPaymentM.1de18811b63eaa181f0a.png",
     "static/media/php.png": "/static/media/php.992bd9dce15aaf15dbcb.png",
     "static/media/redux.png": "/static/media/redux.e99bd0dc61f73ac5c650.png",
     "static/media/wordpress.png": "/static/media/wordpress.1fe0c62e86f697e88c78.png",
@@ -30,12 +32,12 @@
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "index.html": "/index.html",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
-    "main.64b34d19.css.map": "/static/css/main.64b34d19.css.map",
-    "main.d164a140.js.map": "/static/js/main.d164a140.js.map",
+    "main.7c15d39d.css.map": "/static/css/main.7c15d39d.css.map",
+    "main.1ddac09a.js.map": "/static/js/main.1ddac09a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64b34d19.css",
-    "static/js/main.d164a140.js"
+    "static/css/main.7c15d39d.css",
+    "static/js/main.1ddac09a.js"
   ]
 }
