@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.64b34d19.css",
-    "main.js": "/static/js/main.c4bcb30b.js",
+    "main.js": "/static/js/main.d164a140.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/profile.png": "/static/media/profile.a1f6c22730f2547e46dc.png",
     "static/media/exchange.png": "/static/media/exchange.6afd74229b82da26488a.png",
     "static/media/exchangeD1.png": "/static/media/exchangeD1.833270d1f74bd610d3dd.png",
     "static/media/exchangeM1.png": "/static/media/exchangeM1.e20cb8b3dc02658dbc04.png",
@@ -15,7 +16,6 @@
     "static/media/re-me2.jpg": "/static/media/re-me2.5d134e1e883c3f8f65ee.jpg",
     "static/media/budgetcategorieMb.png": "/static/media/budgetcategorieMb.0e528148c9bdad9650cb.png",
     "static/media/php.png": "/static/media/php.992bd9dce15aaf15dbcb.png",
-    "static/media/profile.jpeg": "/static/media/profile.29db8c44b9b266b53171.jpeg",
     "static/media/redux.png": "/static/media/redux.e99bd0dc61f73ac5c650.png",
     "static/media/wordpress.png": "/static/media/wordpress.1fe0c62e86f697e88c78.png",
     "static/media/laravel.png": "/static/media/laravel.8d5534fb7249df36532e.png",
@@ -31,11 +31,11 @@
     "index.html": "/index.html",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "main.64b34d19.css.map": "/static/css/main.64b34d19.css.map",
-    "main.c4bcb30b.js.map": "/static/js/main.c4bcb30b.js.map",
+    "main.d164a140.js.map": "/static/js/main.d164a140.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64b34d19.css",
-    "static/js/main.c4bcb30b.js"
+    "static/js/main.d164a140.js"
   ]
 }
